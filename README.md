@@ -1,4 +1,4 @@
-# Exploring_ML
+# exploring_ML
 This repository explores some frequently used machine learning algorithms in Python.
 
 ## Supervised Learning
