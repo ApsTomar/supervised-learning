@@ -1,7 +1,5 @@
-# enron_ML
-Exploring enron dataset using various machine learning algorithms.
+# Exploring_ML
+This repository explores some frequently used machine learning algorithms in Python.
 
-Link to the enron dataset:
-https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz    
-Alternatively, you can download it from kaggle:
-https://www.kaggle.com/wcukierski/enron-email-dataset
+## Supervised Learning
+1. k-Nearest Neighbours
