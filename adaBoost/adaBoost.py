@@ -14,11 +14,11 @@ iris_data, iris_target = make_classification(n_samples=100, n_features=4,
                                             n_informative=3, n_redundant=0,
                                             random_state=0, shuffle=False)
 
-decisionTreeClf = DecisionTreeClassifier(criterion='entropy', max_depth=1)
+decisionTreeClf = DecisionTreeClassifier(criterion='entropy', max_depth=2)
 decisionTreeClf.fit(iris_data,iris_target)
-dt_scores = cross_val_score(decisionTreeClf, iris_data, iris_target, cv=3, scoring='accuracy')
+dt_scores = cross_val_score(decisionTreeClf, iris_data, iris_target, cv=5, scoring='accuracy')
 print("Decision tree accuracy: %f" %dt_scores.mean())
-adaBoostClf = AdaBoostClassifier(base_estimator=decisionTreeClf, n_estimators=5, random_state=0)
+adaBoostClf = AdaBoostClassifier(base_estimator=decisionTreeClf, n_estimators=10, random_state=0)
 adaBoostClf.fit(iris_data,iris_target)
 ab_scores = cross_val_score(adaBoostClf, iris_data, iris_target, cv=3, scoring='accuracy')
 print ("AdaBoost accuracy: %f" %ab_scores.mean())
