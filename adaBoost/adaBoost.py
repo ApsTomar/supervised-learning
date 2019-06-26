@@ -10,11 +10,11 @@ from sklearn.model_selection import cross_val_score
 path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data.set_path(path)
 
-iris_data, iris_target = make_classification(n_samples=100, n_features=4,
+iris_data, iris_target = make_classification(n_samples=10, n_features=4,
                                             n_informative=3, n_redundant=0,
                                             random_state=0, shuffle=False)
 
-decisionTreeClf = DecisionTreeClassifier(criterion='entropy', max_depth=2)
+decisionTreeClf = DecisionTreeClassifier(criterion='gini', max_depth=1)
 decisionTreeClf.fit(iris_data,iris_target)
 dt_scores = cross_val_score(decisionTreeClf, iris_data, iris_target, cv=5, scoring='accuracy')
 print("Decision tree accuracy: %f" %dt_scores.mean())
