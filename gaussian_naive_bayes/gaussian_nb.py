@@ -1,10 +1,12 @@
 import os, sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from dataset import data
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data.set_path(path)
 

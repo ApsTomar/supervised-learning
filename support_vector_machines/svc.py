@@ -1,15 +1,17 @@
 import os, sys
-from dataset import data
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import cross_val_score
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from dataset import data, preprocessing
+from sklearn.svm import SVC, SVR
+from sklearn.metrics import accuracy_score, explained_variance_score
+from sklearn.model_selection import cross_val_score, GridSearchCV
+
 path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data.set_path(path)
 
 iris_data, iris_target = data.load_iris_data()
-clf = SVC(gamma='auto')
+clf = SVC(gamma='auto', kernel='rbf')
 clf.fit(iris_data, iris_target)
 scores = cross_val_score(clf, iris_data, iris_target, cv=3, scoring='accuracy')
 print("cross_validation_score: %f" % scores.mean())
