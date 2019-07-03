@@ -3,10 +3,10 @@ This repository explores some popular supervised machine learning and ensemble a
 
 ### Supervised Learning Algorithms
 1. Gaussian Naive Bayes
-2. k-Nearest Neighbours 
-3. Support Vector Machines
-4. Decision Trees
-5. Random Forests
+2. Support Vector Machines
+3. Decision Trees
+4. Random Forests
+5. k-Nearest Neighbours
 6. Linear Regression
 
 ### Ensemble Techniques
