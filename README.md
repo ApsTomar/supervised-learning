@@ -1,13 +1,17 @@
 # exploring_ML
-This repository explores some popular machine learning algorithms in Python.
+This repository explores some popular supervised machine learning and ensemble algorithms in Python.
 
-## Supervised Learning
+### Supervised Learning Algorithms
 1. Gaussian Naive Bayes
 2. k-Nearest Neighbours 
 3. Support Vector Machines
 4. Decision Trees
 5. Random Forests
-6. AdaBoost 
+
+### Ensemble Techniques
+1. AdaBoost
+2. Gradient Boost
+3. XGB (Extreme Gradient Boost)
 
 
 #### Dataset for Regression: "house_price" dataset:
@@ -37,3 +41,7 @@ https://archive.ics.uci.edu/ml/machine-learning-databases/iris/
       -- Iris Setosa
       -- Iris Versicolour
       -- Iris Virginica
+      
+.
+
+##### Special thanks to "sid321axn" for kaggle kernel reference.
