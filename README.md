@@ -7,6 +7,7 @@ This repository explores some popular supervised machine learning and ensemble a
 3. Support Vector Machines
 4. Decision Trees
 5. Random Forests
+6. Linear Regression
 
 ### Ensemble Techniques
 1. AdaBoost
