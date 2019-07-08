@@ -3,10 +3,11 @@ This repository explores Supervised learning algorithms for classification and r
 
 ### Supervised Learning Algorithms
 1. Gaussian Naive Bayes
-2. k-Nearest Neighbours 
-3. Support Vector Machines
-4. Decision Trees
-5. Random Forests
+2. Support Vector Machines
+3. Decision Trees
+4. Random Forests
+5. k-Nearest Neighbours
+6. Linear Regression
 
 
 #### Dataset for Regression Algorithms: "house_price" dataset:
@@ -36,5 +37,4 @@ https://archive.ics.uci.edu/ml/machine-learning-databases/iris/
       -- Iris Setosa
       -- Iris Versicolour
       -- Iris Virginica
-      
       
