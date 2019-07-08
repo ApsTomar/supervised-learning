@@ -2,7 +2,7 @@ import os, sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from dataset import data, preprocessing
+from dataset import data
 from sklearn import tree
 from sklearn.metrics import accuracy_score, explained_variance_score
 from sklearn.model_selection import cross_val_score
@@ -22,9 +22,7 @@ prediction = clf.predict(test_data)
 print("Decision Tree Classifier: accuracy score : %f" % accuracy_score(prediction, test_labels))
 
 # Decision Tree Regressor:
-preprocessing.set_path(path)
-# set vis = True for description of dataset and data visualization
-X_train, X_test, y_train, y_test = preprocessing.load_house_data(vis=False)
+X_train, X_test, y_train, y_test = data.load_house_data()
 reg = tree.DecisionTreeRegressor()
 reg.fit(X_train, y_train)
 reg_pred = reg.predict(X_test)

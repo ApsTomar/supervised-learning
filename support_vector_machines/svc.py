@@ -2,10 +2,10 @@ import os, sys
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from dataset import data, preprocessing
+from dataset import data
 from sklearn.svm import SVC, SVR
-from sklearn.metrics import accuracy_score, explained_variance_score
-from sklearn.model_selection import cross_val_score, GridSearchCV
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import cross_val_score
 
 path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data.set_path(path)

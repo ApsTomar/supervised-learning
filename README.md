@@ -14,27 +14,24 @@ This repository explores Supervised learning algorithms for classification and r
 https://www.kaggle.com/harlfoxem/housesalesprediction
 
 ##### Attributes Information (total features = 19):
-   1. id: notation for house
-   2. date: date house was sold
-   3. price: house price (prediction target)
-   4. bedrooms: number of bedrooms
-   5. sqft_living: square footage of house
-   6. yr_built: built year of house
-   
+1. id: notation for house
+2. date: date house was sold
+3. sqft_living: square footage of house
+4. bedrooms: number of bedrooms
+5. price: house price (prediction target)
    and so on...
+   
    
 #### Dataset for Classification Algorithms: "iris" dataset:
 https://archive.ics.uci.edu/ml/machine-learning-databases/iris/
 
 ##### Attributes Information (total features = 4):
-   1. sepal length in cm
-   2. sepal width in cm
-   3. petal length in cm
-   4. petal width in cm
-   5. class: 
-   
-    
-      -- Iris Setosa
-      -- Iris Versicolour
-      -- Iris Virginica
-      
+
+1. sepal length in cm
+2. sepal width in cm
+3. petal length in cm
+4. petal width in cm
+5. classes: 
+    1. Iris Setosa
+    2. Iris Versicolour
+    3. Iris Virginica

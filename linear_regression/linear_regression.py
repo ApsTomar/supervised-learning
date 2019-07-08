@@ -3,12 +3,11 @@ import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from sklearn import linear_model
-from dataset import preprocessing
+from dataset import data
 from sklearn.metrics import explained_variance_score
 
-preprocessing.set_path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# set vis = True for description of dataset and data visualization
-X_train, X_test, y_train, y_test = preprocessing.load_house_data(vis=False)
+data.set_path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+X_train, X_test, y_train, y_test = data.load_house_data()
 reg = linear_model.LinearRegression()
 reg.fit(X_train, y_train)
 pred = reg.predict(X_test)

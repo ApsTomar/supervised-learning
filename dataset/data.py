@@ -1,5 +1,7 @@
 import csv
 import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
 
 path = ''
 
@@ -57,3 +59,12 @@ def load_test_labels():
         test_labels.append(np.int(row))
 
     return test_labels
+
+
+def load_house_data():
+    data = pd.read_csv(path + '/dataset/house_data.csv')
+    features_data = data[
+        ['sqft_living', 'grade', 'sqft_above', 'sqft_living15', 'bathrooms', 'view', 'sqft_basement',
+         'waterfront', 'yr_built', 'lat', 'bedrooms', 'long']]
+    X_train, X_test, y_train, y_test = train_test_split(features_data.values, data.price.values, test_size=0.2)
+    return X_train, X_test, y_train, y_test
