@@ -66,5 +66,5 @@ def load_house_data():
     features_data = data[
         ['sqft_living', 'grade', 'sqft_above', 'sqft_living15', 'bathrooms', 'view', 'sqft_basement',
          'waterfront', 'yr_built', 'lat', 'bedrooms', 'long']]
-    X_train, X_test, y_train, y_test = train_test_split(features_data.values, data.price.values, test_size=0.2)
-    return X_train, X_test, y_train, y_test
+    x_train, x_test, y_train, y_test = train_test_split(features_data.values, data.price.values, test_size=0.2)
+    return x_train, x_test, y_train, y_test
